@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoLog</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #00f3ff; text-align: center; padding: 20px; }
+    .container { max-width: 500px; margin: 0 auto; padding: 30px; background: #111; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 243, 255, 0.3); }
+    .logo { font-size: 50px; color: #00f3ff; text-shadow: 0 0 10px #00f3ff; }
+    .qr { margin: 20px auto; border: 2px solid #00f3ff; border-radius: 10px; }
+    button { margin: 10px; padding: 12px 25px; font-size: 16px; border: none; border-radius: 8px; cursor: pointer; }
+    .btn1 { background: #00f3ff; color: #000; }
+    .btn2 { background: #4caf50; color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">NoLog</div>
+    <p>Подключись к приватному туннелю</p>
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=[Interface]%0APrivateKey%3DsMhWYhsgP0YaBuHJs307bUs1Bc1jFM6X%2BhZI586cs1w%3D%0AAddress%3D10.66.66.2%2F32%2Cfd42%3A42%3A42%3A%3A2%2F128%0ADNS%3D1.1.1.1%2C1.0.0.1%0A%0A[Peer]%0APublicKey%3D5%2Fb3NAosbCKEPSX56mRgxlyOiS1d7MoJR%2BR0ZlzP8m8%3D%0APresharedKey%3DAoQGq6Bpt3wNsj%2BjXwrJVH5xqiEt%2F9VHarsjwy9G%2BsM%3D%0AEndpoint%3D31.184.254.86%3A443%0AAllowedIPs%3D0.0.0.0%2F0%2C%3A%3A%2F0%0APersistentKeepalive%3D25" alt="QR">
+    <button class="btn1" onclick="location.href='wireguard://install?tunnel=NoLog&config=W0ludGVyZmFjZV0KUHJpdmF0ZUtleSA9IHNNaFdZaHNnUDBZYUJ1SEpzUzA3YlVzMUJjMWpGTTZYK2haSTU4NmNzMXc9CkFkZHJlc3MgPSAxMC42Ni42Ni4yLzMyLGZkNDI6NDI6NDI6Oi8xMjgKRE5TID0gMS4xLjEuMSwxLjAuMC4xCgpbcGVlcldDdWJlcl0KUHVibGljS2V5ID0gNS9iM05Bb3NiQ0tFUFNYNTZtUmd4bHlPaVMxZDdNb0pSK1IwWmx6UDhtOD0KUHJlc2hhcmVkS2V5ID0gQW9RR3E2QnB0M3dOc2shalh3ckpWSDV4cWlFdC85VkhBUXJzanR5OUcrc009CkVuZHBvaW50ID0gMzEuMTg0LjI1NC44Njo0NDMAQWxsb3dlZElQcyA9IDAuMC4wLjAvMCw6Oi8wClBlcnNpc3RlbnRLZWVwYWxpdmUgPSAyNQo='">Подключить автоматически</button>
+    <button class="btn2" onclick="window.open('https://play.google.com/store/apps/details?id=com.wireguard.android')">Установить WireGuard</button>
+  </div>
+</body>
+</html>
